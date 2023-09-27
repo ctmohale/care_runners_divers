@@ -1,0 +1,14 @@
+{
+  "resourceName": "carerunnersfiles",
+  "policyUUID": "bb69eb69",
+  "bucketName": "firmfiles",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

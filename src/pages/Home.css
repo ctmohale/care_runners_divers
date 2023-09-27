@@ -1,0 +1,108 @@
+.main_card {
+  min-height: 50%;
+  text-align: center;
+  padding-top: 28%;
+  padding-bottom: 0 !important;
+  margin: 0;
+  --background: rgba(132, 59, 0, 0);
+  box-shadow: none;
+}
+
+.btn {
+  width: 100%;
+  height: 60px;
+  --border-radius: 30px 30px 0 0;
+  background: rgba(237, 237, 237, 0.116);
+  color: rgb(255, 255, 255);
+  border-radius: 30px 30px 0 0;
+}
+.btn_all {
+  width: 100%;
+  height: 60px;
+  background: rgba(237, 237, 237, 0.116);
+  color: rgb(255, 255, 255);
+}
+
+.btn_all:hover {
+  width: 100%;
+  height: 60px;
+  --background: rgba(245, 77, 0, 0.504);
+  color: rgb(255, 255, 255);
+}
+
+.btn-access {
+  height: 50px;
+  padding: 5%;
+  --border-radius: 200px;
+  --background: rgba(245, 77, 0, 0.504);
+}
+
+.card_btn {
+  box-shadow: none;
+  border-radius: 50px 50px 0 0;
+  --background: rgba(245, 77, 0, 0.504);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.card_btn_sub {
+  margin: 2%;
+}
+
+.item_data {
+  --background: rgba(240, 248, 255, 0);
+  color: whitesmoke;
+  --border-style: none !important;
+}
+
+.main_title {
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.584);
+}
+
+/* Input data */
+.inputA {
+  margin: 1%;
+  height: 25px;
+  border-radius: 30px 30px 0 0;
+  border-bottom: 3px solid rgba(245, 245, 245, 0.667);
+}
+
+.input {
+  border-bottom: 3px solid rgba(245, 245, 245, 0.667);
+  margin: 1%;
+  height: 25px;
+}
+.btn_update {
+  width: 100%;
+  height: 50px;
+  --border-radius: 100px;
+}
+
+.card_btn_sub {
+  padding: 3%;
+}
+
+/* Request section */
+.row_main_top {
+  padding: 3%;
+  background-color: rgba(240, 255, 255, 0.404);
+  border-radius: 30px 30px 0 0;
+}
+
+.row_main_top_sub {
+  padding: 3%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: rgba(240, 255, 255, 0.251);
+}
+
+.btn_access_request {
+  width: 50%;
+}
+
+/* Info request */
+.btn_accept_request {
+  width: 100%;
+  height: 50px;
+}

@@ -1,0 +1,15 @@
+.nav_btn {
+  --background: rgba(245, 245, 220, 0);
+  color: rgb(255, 255, 255);
+}
+
+.Nav_row {
+  background: rgba(245, 77, 0, 0.504);
+  color: whitesmoke !important;
+  --margin: 0;
+
+  width: 100%;
+  --overflow: hidden;
+  min-height: 100px;
+  padding-top: 20px;
+}

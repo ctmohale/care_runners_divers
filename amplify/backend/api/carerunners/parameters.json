@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "carerunners",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-09-25T20:56:29.325Z"
+}

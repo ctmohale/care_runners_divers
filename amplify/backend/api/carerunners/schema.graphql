@@ -1,0 +1,79 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY {
+  globalAuthRule: AuthRule = { allow: public }
+} # FOR TESTING ONLY!
+type User @model {
+  id: ID!
+  name: String
+  surname: String
+  cell_no: String
+  email: String
+  access: String
+  lawfirm: [LawFirm] @hasMany(indexName: "byUser", fields: ["id"])
+  polices: [Polices] @hasMany(indexName: "byUser", fields: ["id"])
+}
+
+type LawFirm @model {
+  id: ID!
+  user_id: ID! @index(name: "byUser")
+  company_name: String
+  company_email: String
+  company_registartion: String
+  address: String
+  postal_code: String
+  cell_no: String
+  casefile: [CaseFile] @hasMany(indexName: "byLawFirm", fields: ["id"])
+  membershipaccess: MembershipAccess @hasOne(fields: ["id"])
+}
+
+type CaseFile @model {
+  id: ID!
+  case_file_name: String
+  case_file_type: String
+  law_firm_id: ID! @index(name: "byLawFirm")
+  file_size: String
+}
+
+type Membership @model {
+  id: ID!
+  membership_type: String
+  membership_price: String
+  membership_data: String
+  membershipaccess: MembershipAccess @hasOne (fields: ["id"])
+}
+
+type MembershipAccess @model {
+  id: ID!
+  access_type: String
+  membership_price: String
+  law_firm_id: ID
+  membership_id: ID
+}
+
+type PickUpRequest @model {
+  id: ID!
+  request_type: String
+  request_delivery_state: String
+  law_firm_id: ID! @index(name: "byLawFirm")
+  recipient_full_names: String
+  recipient_cell_no: String
+  destination_address: String
+  request_status: String
+  lat: String
+  lng: String
+}
+
+type Billing @model {
+  id: ID!
+  amount: String
+  month_of_billing: String
+  law_firm_id: ID! @index(name: "byLawFirm")
+}
+
+type Polices @model {
+  id: ID!
+  polices_title: String
+  polices_status: String
+  user_id: ID! @index(name: "byUser")
+}

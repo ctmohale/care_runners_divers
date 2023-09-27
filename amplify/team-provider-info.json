@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-carerunners-dev-212400-authRole",
+      "UnauthRoleArn": "arn:aws:iam::243677669698:role/amplify-carerunners-dev-212400-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::243677669698:role/amplify-carerunners-dev-212400-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-carerunners-dev-212400-deployment",
+      "UnauthRoleName": "amplify-carerunners-dev-212400-unauthRole",
+      "StackName": "amplify-carerunners-dev-212400",
+      "StackId": "arn:aws:cloudformation:us-east-1:243677669698:stack/amplify-carerunners-dev-212400/fae174a0-138d-11ee-b628-0ae04ffbe5d1",
+      "AmplifyAppId": "d2knq716zq3y7f"
+    },
+    "categories": {
+      "auth": {
+        "carerunners1d85b8b4": {}
+      },
+      "storage": {
+        "carerunnersfiles": {}
+      },
+      "api": {
+        "carerunners": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}
